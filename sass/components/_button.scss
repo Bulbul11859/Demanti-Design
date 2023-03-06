@@ -1,0 +1,36 @@
+.btn{
+    border-radius: 50px !important;
+ padding: .5rem 2rem;
+ &:hover{
+    background: #ceffe7;
+ }
+    &-yellow{
+        background: #f9d300;
+        
+      
+    }
+    &-demo{
+        background: #f46839;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 50px;
+       padding: 0px 35px;
+    }
+
+    &-demo2{
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s linear;
+        position: relative;
+        display: inline-block;
+        padding: 0 40px;
+        line-height: 43px;
+        border: 1px solid #ebebeb;
+        border-radius: 25px;
+        margin: 7px;
+    }
+   
+}
+
+

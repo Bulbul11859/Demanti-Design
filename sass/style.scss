@@ -1,0 +1,414 @@
+@import "./base/reset";
+@import "./components/hover";
+@import "./components/button";
+
+
+// -------------topbar----------------------
+
+.topbar {
+  &-text {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    -webkit-animation-name: marquee;
+    animation-name: marquee;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    padding: 0 20px;
+    span {
+      color: #ceffe7;
+      position: relative;
+      margin-left: 3px;
+      border-bottom: 1px solid #ceffe7;
+      &::before {
+      }
+    }
+  }
+  &-text::before {
+    content: "";
+    position: relative;
+    background-image: url(../img/hurry-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    top: 5px;
+    margin-right: 10px;
+  }
+}
+
+// -------------Navbar----------------------
+.menu {
+  img {
+    max-width: 143px;
+  }
+
+  .nav-link {
+    color: #000 !important;
+    font-size: 18px !important;
+  }
+}
+
+// -------------Slider----------------------
+.Slider{
+    
+  .slider {
+    margin-top: 90px;
+    color: #000;
+    &-left {
+      width: 38%;
+      .content1 {
+        &-img {
+          display: flex;
+          align-items: center;
+          background: #e6e6e6;
+          position: relative;
+          width: 62px !important;
+          height: 62px !important;
+          justify-content: center;
+          border-radius: 50%;
+          margin-right: 25px;
+          img {
+            display: block;
+          }
+          &-text {
+            position: absolute;
+            top: 0;
+            right: -22px;
+            background: red;
+            font-size: 14px;
+            padding: 0px 10px;
+            line-height: 17px;
+            border-radius: 3px;
+            font-weight: 800;
+            color: #fff;
+          }
+        }
+        h3 {
+          font-size: 19px;
+          line-height: 22px;
+          letter-spacing: 2px;
+          font-weight: 300;
+          text-transform: uppercase;
+          span {
+            font-weight: 800;
+          }
+        }
+      }
+  
+      .content2 {
+        margin-top: 20px;
+        h2 {
+          font-weight: 500;
+          font-size: 60px;
+          line-height: 78px;
+          span {
+            text-transform: uppercase;
+            padding: 0 20px;
+            background: linear-gradient(
+              to right,
+              #12c2e9 0%,
+              #c471ed 49%,
+              #f64f59 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 2;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              border-radius: 3px;
+              background: #ffffff;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+          }
+        }
+      }
+  
+      .content3 {
+        span {
+          color: #000;
+          font-size: 30px;
+          margin-right: 30px;
+          text-transform: capitalize;
+          cursor: pointer;
+        }
+      }
+  
+      .demo {
+        margin-top: 25px;
+      }
+    }
+    &-right {
+      width: 64%;
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+// -------------Policy----------------------
+
+.policy {
+  margin-top: 100px;
+  margin-bottom: 75px;
+  .Card {
+    box-shadow: 0px 2px 20px 0px rgb(0 0 0 / 15%);
+    height: 200px;
+    width: 100%;
+    border-radius: 3px;
+    padding-top: 35px;
+    padding-left: 17px;
+    margin-bottom: 20px;
+    .content1 {
+      &-text {
+        margin-left: 20px;
+        p {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+          color: #aaa;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+        h2 {
+          font-size: 25px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// -------------demo----------------------
+.demo {
+  &-text {
+    .content1 {
+      h1 {
+        font-size: 90px;
+
+        margin-bottom: 5px;
+        color: #f46839;
+        font-weight: 600;
+        span {
+          font-size: 48px;
+          font-weight: 600;
+          top: -4px;
+          right: -24px;
+        }
+      }
+    }
+
+    .content2 {
+      div {
+        font-size: 20px;
+        max-width: 420px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    button:nth-child(1) {
+      background: #ceffe7;
+    }
+    button:nth-child(3) {
+      color: orange;
+      border-color: orange;
+    }
+  }
+
+  .demo-card {
+    margin-top: 40px;
+    &-img {
+      min-height: 559px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 320px;
+      }
+      .card-foot {
+        padding-top: 20px;
+        text-align: left;
+        .new {
+          border-radius: 10px;
+          padding: 0 13px;
+          margin-right: 12px;
+          color: #000;
+          font-size: 10px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          line-height: 20px;
+          display: inline-block;
+          text-transform: uppercase;
+          background: #ceffe7;
+        }
+        span{
+          color: #000
+        }
+      }
+    }
+  }
+}
+
+// -------------feature----------------------
+.feature{
+  &-tittle{
+    margin-bottom: 50px;
+    h2{
+      font-size: 35px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 15px;
+    }
+    h1{
+      font-size: 50px;
+      margin-bottom: 15px;
+      span{
+        font-size: 50px;
+        padding: 0 20px;
+        color: #000;
+        border: 1px solid #000;
+      }
+    }
+    p{
+      font-size: 20px;
+     font-weight: 300;
+      span{
+        color: #000;
+      }
+    }
+  }
+
+  .table{
+    color: #3b3b3bd3;
+    font-size: 16px;
+    font-weight: 300;
+    td {
+      border-bottom: 1px solid #ccc;
+    }
+    tbody{
+      tr > td:nth-child(4) {
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+      }
+
+      td{
+        i{
+          margin-right: 7px;
+          font-size: 22px;
+          font-weight: 600;
+          color: #09f56b;
+         
+        }
+      }
+      
+    }
+  }
+
+  &-design{
+    margin-top: 75px;
+    .content1{
+      text-align: center;
+    }
+
+    .content2{
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 40px;
+      span{
+      margin-right: 25px;
+      
+      
+      .hover-child{
+        margin-top: 10px;
+        background: #f46839!important;
+      }
+      }
+    }
+  }
+  
+  .feature-slider{
+    margin-bottom: 76px;
+  }
+  .slick-prev {
+   
+   
+    position: absolute;
+    left: 40%;
+    z-index: 5;
+    top: 112%;
+   
+   
+  }
+  
+  .slick-next {
+ 
+    position: absolute;   
+    right: 40%;
+    top: 112%;
+    z-index: 5;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+  
+    line-height: 1;
+    opacity: .75;
+
+    
+    color: #b3b3b3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.feature-UiUx{
+  margin-top: 260px;
+ 
+}
+  
+}
+
+
+
+.slick-dots li button:before {
+  color: #ff0f0f !important;
+}
+
+/* Change the size of the dots */
+.slick-dots li button:before {
+  font-size: 7px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #ff0000 !important;
+}
+
+/* Change the size of the active dot */
+.slick-dots li.slick-active button:before {
+  border: 1px solid rgb(255, 145, 0) !important ;
+  border-radius: 50%
+}
+
+@import "./layout/responsive";

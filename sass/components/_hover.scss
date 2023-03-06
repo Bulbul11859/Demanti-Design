@@ -1,0 +1,24 @@
+.hover-parent{
+    position: relative;
+    cursor: pointer;
+    .hover-child{
+      display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: #2e2e2e;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: .4s;
+    }
+    &:hover .hover-child{
+      display: inline-block;
+        
+      width: 88%;
+      border-radius: 5px;
+    }
+  }
+
+  
